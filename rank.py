@@ -183,8 +183,10 @@ JD (Scale requirement: high-traffic, millions of queries):
 CANDIDATE:
 {profile_summary}
 
-Rank candidates higher if they built systems at high-traffic scale (millions of queries/day).
-A candidate from Amazon Search, Flipkart Search, or similar scale should rank above smaller company equivalents.
+INSTRUCTIONS:
+1. Scale Weighting: Prioritize candidates who built systems at high-traffic scale (millions of queries/day). Verifiable company context (e.g. Amazon, Flipkart) ranks higher than smaller equivalents.
+2. Skepticism: Treat self-reported metrics (e.g. "0.91 NDCG", "30% revenue lift") with moderate skepticism unless backed by company scale or team context.
+3. Mandatory Gap: You MUST provide a top_gap for every candidate. If technical skills are elite, focus on startup-fit gaps (e.g. "Adapting from large-corp infra to 0-to-1 environments") or compensation/relocation risks. Never return "None".
 
 Return ONLY valid JSON:
 {{
