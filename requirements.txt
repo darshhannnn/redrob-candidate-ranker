@@ -1,2 +1,8 @@
-# No external dependencies required.
-# All imports are from the Python Standard Library.
+# Core dependencies for Hybrid Ranker
+sentence-transformers
+chromadb
+ollama
+python-docx
+pandas
+numpy
+tqdm
