@@ -1,101 +1,101 @@
-candidate_id,rank,score,reasoning
-CAND_0068811,1,1.55,"Excellent candidate with 8.0y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0006418,2,1.54,"Excellent candidate with 5.7y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0017960,3,1.54,"Excellent candidate with 7.7y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0018499,4,1.52,"Excellent candidate with 7.2y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0041610,5,1.52,"Excellent candidate with 6.7y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0007009,6,1.51,"Excellent candidate with 7.9y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0027691,7,1.51,"Excellent candidate with 6.5y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0052431,8,1.5,"Excellent candidate with 5.3y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0011687,9,1.49,"Excellent candidate with 7.8y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0067866,10,1.48,"Excellent candidate with 6.4y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0068932,11,1.48,"Excellent candidate with 5.2y experience, Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0045250,12,1.47,"Excellent candidate with 6.6y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0081846,13,1.47,"Excellent candidate with 6.7y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0094759,14,1.47,"Excellent candidate with 8.6y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0049538,15,1.45,"Excellent candidate with 5.8y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0054100,16,1.45,"Excellent candidate with 6.0y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0064326,17,1.45,"Excellent candidate with 7.6y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0077337,18,1.45,"Excellent candidate with 7.0y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0043860,19,1.43,"Excellent candidate with 6.1y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0064888,20,1.43,"Excellent candidate with 5.8y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0065195,21,1.43,"Excellent candidate with 5.1y experience, Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0064270,22,1.42,"Excellent candidate with Embeddings/Vector DB/Ranking/LLM/Python, Production experience, Product company background, and Local in Pune/Noida."
-CAND_0015967,23,1.4,"Excellent candidate with 5.4y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0050454,24,1.4,"Excellent candidate with 6.8y experience, Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0053591,25,1.4,"Excellent candidate with 5.3y experience, Embeddings/Vector DB/Ranking/LLM, Production experience, and Product company background."
-CAND_0077498,26,1.4,"Excellent candidate with 5.4y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0097079,27,1.4,"Excellent candidate with 5.7y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0099401,28,1.4,"Excellent candidate with 7.7y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0041669,29,1.39,"Excellent candidate with 8.0y experience, Embeddings/Vector DB/Ranking/LLM, Production experience, and Product company background."
-CAND_0054123,30,1.39,"Excellent candidate with Embeddings/Vector DB/Ranking/LLM/Python, Production experience, Product company background, and Tier-1 city resident."
-CAND_0087630,31,1.39,"Excellent candidate with 7.2y experience, Embeddings/Vector DB/Ranking/LLM, Production experience, and Product company background."
-CAND_0013665,32,1.38,"Excellent candidate with 5.2y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0036184,33,1.38,"Excellent candidate with 6.0y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0072688,34,1.38,"Excellent candidate with 6.9y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0005260,35,1.37,"Excellent candidate with 5.2y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0010685,36,1.37,"Excellent candidate with 6.7y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0047542,37,1.37,"Excellent candidate with 5.0y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0052328,38,1.37,"Excellent candidate with 6.5y experience, Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0058688,39,1.37,"Excellent candidate with 6.7y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0081852,40,1.37,"Excellent candidate with 5.9y experience, Embeddings/Vector DB/Ranking/LLM, Production experience, and Product company background."
-CAND_0008425,41,1.36,"Excellent candidate with 7.8y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0042029,42,1.36,"Excellent candidate with 6.5y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0049543,43,1.36,"Excellent candidate with 6.1y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0051630,44,1.36,"Excellent candidate with 6.0y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0066999,45,1.36,"Excellent candidate with 5.9y experience, Embeddings/Vector DB/Ranking/LLM, Production experience, and Product company background."
-CAND_0077285,46,1.36,"Excellent candidate with 5.5y experience, Embeddings/Vector DB/Ranking/LLM, Production experience, and Product company background."
-CAND_0092255,47,1.36,"Excellent candidate with 5.2y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0094728,48,1.36,"Excellent candidate with 6.5y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0000031,49,1.35,"Excellent candidate with 6.0y experience, Embeddings/Vector DB/Ranking/Python, Production experience, and Product company background."
-CAND_0017093,50,1.35,"Excellent candidate with 5.9y experience, Embeddings/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0068410,51,1.35,"Excellent candidate with 5.8y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0089947,52,1.35,"Excellent candidate with 5.4y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0020877,53,1.34,"Excellent candidate with 5.1y experience, Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0052682,54,1.34,"Excellent candidate with 6.6y experience, Embeddings/Vector DB/LLM/Python, Production experience, and Product company background."
-CAND_0054394,55,1.34,"Excellent candidate with Embeddings/Vector DB/Ranking/LLM/Python, Production experience, Product company background, and Local in Pune/Noida."
-CAND_0069638,56,1.34,"Excellent candidate with 6.2y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0073007,57,1.34,"Excellent candidate with 5.8y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0076163,58,1.34,"Excellent candidate with 6.9y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0078042,59,1.34,"Excellent candidate with Embeddings/Vector DB/Ranking/LLM/Python, Production experience, Product company background, and High engagement."
-CAND_0081053,60,1.34,"Excellent candidate with 5.4y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0083879,61,1.34,"Excellent candidate with 7.1y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0002025,62,1.33,"Excellent candidate with 5.9y experience, Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0007052,63,1.33,"Excellent candidate with 6.5y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0055905,64,1.33,"Excellent candidate with 8.1y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0057736,65,1.33,"Excellent candidate with 6.2y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0061655,66,1.33,"Excellent candidate with Vector DB/Ranking/LLM/Python, Production experience, Product company background, and Active recently."
-CAND_0012837,67,1.32,"Excellent candidate with 6.4y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0036121,68,1.32,"Excellent candidate with 5.2y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0052335,69,1.32,"Excellent candidate with 6.4y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0081480,70,1.32,"Excellent candidate with 5.6y experience, Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0001131,71,1.31,"Excellent candidate with 5.8y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0005649,72,1.31,"Excellent candidate with 7.4y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0046525,73,1.31,"Excellent candidate with 6.1y experience, Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0048558,74,1.31,"Excellent candidate with 6.7y experience, Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0053695,75,1.31,"Excellent candidate with 5.8y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0060835,76,1.31,"Excellent candidate with 6.6y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0064256,77,1.31,"Excellent candidate with 6.4y experience, Embeddings/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0096104,78,1.31,"Excellent candidate with 7.0y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0096172,79,1.31,"Excellent candidate with 5.2y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0007411,80,1.3,"Excellent candidate with 8.0y experience, Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0018888,81,1.3,"Excellent candidate with 6.5y experience, Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0026640,82,1.3,"Excellent candidate with 6.1y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0049978,83,1.3,"Excellent candidate with 6.6y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0076831,84,1.3,"Excellent candidate with Embeddings/Vector DB/Ranking/LLM/Python, Production experience, Product company background, and Tier-1 city resident."
-CAND_0001056,85,1.29,"Excellent candidate with 5.1y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0008239,86,1.29,"Excellent candidate with Embeddings/Vector DB/Ranking/LLM/Python, Production experience, Product company background, and Willing to relocate."
-CAND_0014440,87,1.29,"Excellent candidate with 6.4y experience, Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0030348,88,1.29,"Excellent candidate with Embeddings/Vector DB/Ranking/LLM/Python, Production experience, Product company background, and Local in Pune/Noida."
-CAND_0030946,89,1.29,"Excellent candidate with 6.7y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0037566,90,1.29,"Excellent candidate with 6.9y experience, Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0038368,91,1.29,"Excellent candidate with 5.4y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0040117,92,1.29,"Excellent candidate with 6.5y experience, Embeddings/Vector DB/Ranking/LLM, Production experience, and Product company background."
-CAND_0040955,93,1.29,"Excellent candidate with 6.6y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0047327,94,1.29,"Excellent candidate with 5.0y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0071974,95,1.29,"Excellent candidate with 7.8y experience, Embeddings/Vector DB/Ranking/LLM, Production experience, and Product company background."
-CAND_0074735,96,1.29,"Excellent candidate with 5.5y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0076251,97,1.29,"Excellent candidate with 7.6y experience, Embeddings/Vector DB/Ranking/LLM, Production experience, and Product company background."
-CAND_0078492,98,1.29,"Excellent candidate with 5.1y experience, Embeddings/Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0098846,99,1.29,"Excellent candidate with 7.6y experience, Vector DB/Ranking/LLM/Python, Production experience, and Product company background."
-CAND_0099806,100,1.29,"Excellent candidate with Embeddings/Vector DB/Ranking/LLM, Production experience, Product company background, and Willing to relocate."
+candidate_id,rank,name,final_score,llm_score,feature_score,top_strength,top_gap,fit_summary
+CAND_0018499,1,Aarav Trivedi,0.484,0,86.18203943967819,Experience with Deep Learning,Requires deeper verification of production scale.,Strong candidate with 7.2y experience in Food Delivery.
+CAND_0055905,2,Anika Rao,0.454,0,84.70951521396637,Experience with Elasticsearch,Requires deeper verification of production scale.,Strong candidate with 8.1y experience in E-commerce.
+CAND_0077337,3,Aarav Agarwal,0.454,0,84.61847567558289,Experience with GANs,Requires deeper verification of production scale.,Strong candidate with 7.0y experience in Fintech.
+CAND_0068351,4,Aadhya Iyer,0.453,0,84.35688817501068,Experience with pgvector,Requires deeper verification of production scale.,Strong candidate with 6.4y experience in AI/ML.
+CAND_0046525,5,Tanvi Mukherjee,0.448,0,82.63162416219711,Experience with Elasticsearch,Requires deeper verification of production scale.,Strong candidate with 6.1y experience in AI Services.
+CAND_0024878,6,Aanya Shetty,0.447,0,82.37826508283615,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0013665,7,Nisha Joshi,0.446,0,82.04612743854523,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0048558,8,Aisha Joshi,0.446,0,82.0521633028984,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0064326,9,Nisha Pillai,0.446,0,82.07881194353104,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0080766,10,Kiara Mittal,0.446,0,90.30322104692459,Experience with Search Backend,Requires deeper verification of production scale.,Strong candidate with 8.8y experience in Software.
+CAND_0065195,11,Kiara Mukherjee,0.441,0,80.26964157819748,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0011327,12,Pranav Krishnan,0.435,0,78.35645633935928,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0032515,13,Anjali Sen,0.427,0,84.0755500793457,Experience with MLflow,Requires deeper verification of production scale.,Strong candidate with 5.1y experience in HealthTech.
+CAND_0010257,14,Ira Shetty,0.421,0,90.39337605237961,Experience with Milvus,Requires deeper verification of production scale.,Strong candidate with 6.5y experience in Internet.
+CAND_0065878,15,Suresh Kapoor,0.421,0,82.02740263938904,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0071974,16,Sai Verma,0.421,0,90.34323692321777,Experience with LoRA,Requires deeper verification of production scale.,Strong candidate with 7.8y experience in Media.
+CAND_0075574,17,Karan Ghosh,0.421,0,82.03628194332123,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0079387,18,Sneha Arora,0.409,0,86.34865826368332,Experience with scikit-learn,Requires deeper verification of production scale.,Strong candidate with 6.9y experience in Software.
+CAND_0081846,19,Arjun Khanna,0.405,0,85.0111603140831,Experience with Data Science,Requires deeper verification of production scale.,Strong candidate with 6.7y experience in Fintech.
+CAND_0020845,20,Myra Malhotra,0.398,0,82.53440153598785,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0065139,21,Avni Tiwari,0.398,0,82.68458706140518,Experience with MLOps,Requires deeper verification of production scale.,Strong candidate with 5.2y experience in HealthTech AI.
+CAND_0052706,22,Ira Krishnan,0.397,0,82.23054987192154,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0073883,23,Zara Sen,0.397,0,82.16866236925125,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0041918,24,Sanjay Hegde,0.396,0,82.00820338726044,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0006567,25,Aditya Subramanian,0.391,0,80.48590242862701,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0061257,26,Advaith Pillai,0.391,0,80.31099021434784,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0012837,27,Myra Chowdary,0.39,0,80.13096868991852,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0024147,28,Zara Bhatia,0.39,0,80.02004086971283,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0026362,29,Rajesh Naidu,0.385,0,78.348562002182,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0047542,30,Anil Nair,0.384,0,78.11373430490494,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0095528,31,Amit Dalal,0.384,0,86.29619812965393,Experience with Feature Engineering,Requires deeper verification of production scale.,Strong candidate with 5.3y experience in Media.
+CAND_0053422,32,Yash Subramanian,0.372,0,82.18170773983002,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0042029,33,Dhruv Joshi,0.367,0,80.63273966312408,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0067643,34,Suresh Patel,0.365,0,80.16039997339249,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0093883,35,Pranav Singh,0.361,0,78.50847947597504,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0022720,36,Arjun Patel,0.36,0,78.18944025039673,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0071821,37,Amit Naidu,0.36,0,78.19119083881378,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0029671,38,Tanya Chatterjee,0.359,0,78.04321277141571,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0044883,39,Rajesh Reddy,0.352,0,84.13658434152603,Experience with CNN,Requires deeper verification of production scale.,Strong candidate with 6.3y experience in AI/ML.
+CAND_0019288,40,Ved Dutta,0.347,0,82.26808172464371,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0033839,41,Shaurya Subramanian,0.347,0,82.43439090251923,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0042690,42,Krishna Pillai,0.347,0,82.30035823583603,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0077067,43,Vihaan Malhotra,0.347,0,82.19999742507935,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0077261,44,Shaurya Krishnan,0.347,0,82.36304831504822,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0018961,45,Ishaan Khanna,0.346,0,82.06970643997192,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0056704,46,Siya Joshi,0.346,0,82.1095712184906,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0059795,47,Pooja Chopra,0.346,0,82.13993620872498,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0061819,48,Kabir Krishnan,0.346,0,82.16295075416565,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0067201,49,Sunil Dalal,0.346,0,81.99941647052765,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0002793,50,Rajesh Mittal,0.335,0,78.36157727241516,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0005311,51,Naina Tiwari,0.335,0,78.39129465818405,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0022413,52,Zara Bose,0.335,0,78.23316770792007,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0025293,53,Anil Khanna,0.335,0,78.30682802200317,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0070653,54,Meera Khanna,0.335,0,78.35370528697968,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0076035,55,Neha Goyal,0.335,0,78.39297223091125,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0079176,56,Shreya Trivedi,0.335,0,78.35761952400208,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0033649,57,Aarohi Iyer,0.334,0,78.1566332578659,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0008425,58,Myra Krishnan,0.329,0,84.68865180015564,Experience with Learning to Rank,Requires deeper verification of production scale.,Strong candidate with 7.8y experience in Transportation.
+CAND_0010541,59,Meera Krishnan,0.323,0,82.58378487825394,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0025046,60,Aditya Chatterjee,0.323,0,82.6901678442955,Experience with Statistical Modeling,Requires deeper verification of production scale.,Strong candidate with 6.7y experience in AI Services.
+CAND_0005191,61,Aarohi Shetty,0.322,0,82.18226385116577,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0047721,62,Om Verma,0.322,0,82.34567654132843,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0099751,63,Dev Sharma,0.322,0,82.21632850170135,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0010283,64,Shaurya Sharma,0.316,0,80.20345687866211,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0058412,65,Aadhya Shetty,0.316,0,80.2923509478569,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0074731,66,Vikram Naidu,0.316,0,80.1807713508606,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0081321,67,Avni Dalal,0.316,0,80.18616676330566,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0018925,68,Sneha Rao,0.315,0,80.10862022638321,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0028287,69,Myra Iyengar,0.315,0,80.04397362470627,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0028793,70,Myra Dutta,0.315,0,80.14869809150696,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0062032,71,Amit Verma,0.315,0,79.98205602169037,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0080102,72,Naina Desai,0.315,0,80.16594767570496,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0021491,73,Aarohi Hegde,0.31,0,78.31541287899017,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0043676,74,Ishaan Pandey,0.31,0,78.3295174241066,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0061175,75,Reyansh Chatterjee,0.31,0,78.39946675300598,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0066791,76,Anil Vora,0.31,0,78.32121151685715,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0001131,77,Aarav Goyal,0.309,0,78.04437685012817,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0038615,78,Advik Dutta,0.309,0,78.1167219877243,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0095868,79,Amit Bose,0.309,0,78.04380881786346,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0041611,80,Aarohi Chowdary,0.302,0,83.98957455158234,Experience with LlamaIndex,Requires deeper verification of production scale.,Strong candidate with 6.4y experience in AI/ML.
+CAND_0067041,81,Advik Khanna,0.298,0,82.54886996746063,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0000165,82,Suresh Reddy,0.297,0,82.33866465091705,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0044890,83,Ananya Bose,0.297,0,82.41472762823105,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0037486,84,Anil Verma,0.29,0,80.05928784608841,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0040157,85,Meera Iyer,0.29,0,80.12664198875427,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0065743,86,Ved Ghosh,0.29,0,80.03212094306946,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0015643,87,Saanvi Mukherjee,0.285,0,78.27135491371155,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0022852,88,Aryan Dalal,0.285,0,78.39885103702545,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0036484,89,Advaith Singh,0.285,0,78.40003508329391,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0061136,90,Anil Gupta,0.284,0,78.04554271697998,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0060315,91,Naina Sharma,0.278,0,84.21198391914368,Experience with Computer Vision,Requires deeper verification of production scale.,Strong candidate with 5.4y experience in AI/ML.
+CAND_0045862,92,Aanya Dalal,0.272,0,82.27146190404892,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0087783,93,Ritu Gupta,0.272,0,82.18145471811295,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0092278,94,Ananya Arora,0.27,0,90.0027471780777,Experience with TensorFlow,Requires deeper verification of production scale.,Strong candidate with 6.8y experience in Software.
+CAND_0076412,95,Meera Bhatia,0.266,0,80.49893498420715,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0040200,96,Meera Mittal,0.261,0,78.60497909784317,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0060072,97,Anil Mishra,0.254,0,84.71135491132736,Experience with Deep Learning,Requires deeper verification of production scale.,Strong candidate with 5.7y experience in Internet.
+CAND_0031703,98,Krishna Banerjee,0.246,0,82.01398980617523,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0086028,99,Shaurya Tiwari,0.236,0,78.75813889503479,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
+CAND_0088878,100,Om Hegde,0.235,0,78.20170032978058,Strong technical profile,Detailed LLM analysis pending,Qualified candidate from semantic search.
