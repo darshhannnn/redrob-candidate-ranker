@@ -1,0 +1,7 @@
+# Ignore large data files and hackathon bundle
+data/
+*.zip
+*.jsonl
+*.json
+__pycache__/
+.DS_Store
