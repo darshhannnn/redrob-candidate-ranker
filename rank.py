@@ -28,15 +28,17 @@ LLM_MODEL_NAME = 'qwen2.5:0.5b'
 CHROMA_PATH = "./chroma_db"
 
 # Keywords and Constants
-SERVICE_COMPANIES = {
-    "tcs", "tata consultancy", "infosys", "wipro", "accenture", "cognizant", "capgemini", 
-    "hcl", "tech mahindra", "mindtree", "l&t", "larsen & toubro", "persistent", "zensar", 
-    "hexaware", "mphasis", "ust global", "ntt data", "fujitsu", "ibm", "deloitte", "ey", 
-    "kpmg", "pwc", "capita", "atos", "conduent", "genpact"
-}
-
 NON_TECH_TITLES = {"marketing", "sales", "hr", "human resources", "recruiter", "accountant", "graphic designer", "content writer", "operations manager"}
-AI_KEYWORDS = ["embedding", "retrieval", "vector database", "ranking", "llm", "nlp", "rag", "transformer", "bert", "gpt", "fine-tuning"]
+AI_KEYWORDS = [
+    "embedding", "retrieval", "vector database", "ranking", "llm",
+    "nlp", "rag", "transformer", "bert", "gpt", "fine-tuning",
+    "recommendation system", "personalization", "search relevance",
+    "semantic search", "faiss", "pinecone", "langchain", "llamaindex",
+    "reranking", "ndcg", "mrr", "evaluation framework", "mlops"
+]
+
+SERVICE_SIGNALS = ["consultant", "associate consultant", "delivery manager", "client engagement", "offshore", "onsite coordinator", "outsourcing"]
+PRODUCT_SIGNALS = ["founding engineer", "staff engineer", "principal engineer", "growth", "0 to 1", "built from scratch", "product", "platform", "saas"]
 
 PRODUCTION_VERBS_A = ["deployed", "shipped", "production", "latency", "scale", "serving", "real-time", "millions"]
 PRODUCTION_VERBS_B = ["built", "optimized", "improved", "reduced", "system", "pipeline"]
@@ -95,68 +97,102 @@ def check_honeypot(candidate):
 
     return False
 
-def get_feature_score(candidate, semantic_score=0.0):
-    score = 0
+def get_scores(candidate, semantic_score=0.0):
     profile = candidate['profile']
-    career_text = " ".join([job.get('description', '').lower() for job in candidate.get('career_history', [])])
+    career_history = candidate.get('career_history', [])
+    career_text = " ".join([job.get('description', '').lower() for job in career_history])
+    all_history_text = " ".join([f"{job.get('title', '')} {job.get('description', '')}".lower() for job in career_history])
     
-    # A. Experience depth score (0–20)
+    # --- A. Feature Score (0-100 base) ---
+    feat_score = 0
+    
+    # 1. Experience depth (0-20)
     yoe = profile.get('years_of_experience', 0)
-    if 5 <= yoe <= 9: score += 20
-    elif 4 <= yoe <= 12: score += 14
-    else: score += 5
-    if yoe > 15: score -= 5 
+    if 5 <= yoe <= 9: feat_score += 20
+    elif 4 <= yoe <= 12: feat_score += 14
+    else: feat_score += 5
+    if yoe > 15: feat_score -= 5 
 
-    # B. Production signal score (0–20)
+    # 2. Production signal (0-20)
     prod_score = 0
     for verb in PRODUCTION_VERBS_A:
         if verb in career_text: prod_score += 4
     for verb in PRODUCTION_VERBS_B:
         if verb in career_text: prod_score += 2
-    score += min(prod_score, 20)
+    feat_score += min(prod_score, 20)
 
-    # C. Semantic match score (0–20)
-    score += min(semantic_score * 20, 20)
-
-    # D. Behavioral signal score (0–20)
-    signals = candidate.get('redrob_signals', {})
-    behav_score = 0
-    last_active = signals.get('last_active_date', '2000-01-01')
-    try:
-        dt = datetime.strptime(last_active, '%Y-%m-%d')
-        days_since = (datetime(2026, 6, 11) - dt).days
-        if days_since < 30: behav_score += 8
-    except: pass
-    if signals.get('notice_period_days', 90) < 30: behav_score += 8
-    if signals.get('recruiter_response_rate', 0) > 0.7: behav_score += 4
-    score += behav_score
-
-    # E. Company type score (0–10)
-    current_company = profile.get('current_company', '').lower()
-    current_industry = profile.get('current_industry', '').lower()
-    is_service = any(sc in current_company for sc in SERVICE_COMPANIES) or "it services" in current_industry
-    if not is_service: score += 10
+    # 3. Semantic match (0-20)
+    feat_score += min(semantic_score * 20, 20)
     
-    # F. Education alignment score (0–10)
+    # 4. Company Type (0-20) - Title + Description Heuristic
+    company_score = 0
+    if any(sig in all_history_text for sig in PRODUCT_SIGNALS):
+        company_score += 15
+        if "founding" in all_history_text or "0 to 1" in all_history_text:
+            company_score += 5
+    if any(sig in all_history_text for sig in SERVICE_SIGNALS):
+        company_score -= 10
+    feat_score += max(0, min(company_score, 20))
+
+    # 5. Education alignment (0-20)
     edu_score = 0
     for edu in candidate.get('education', []):
         fos = edu.get('field_of_study', '').lower()
         if any(kw in fos for kw in ["computer science", "artificial intelligence", "machine learning"]):
-            edu_score = 10
+            edu_score = 20
             break
         elif "engineering" in fos:
-            edu_score = 7
-    score += edu_score
+            edu_score = 14
+    feat_score += edu_score
 
-    return score
+    # --- B. Behavioral Score (0-100 normalized) ---
+    behav_score = 0
+    signals = candidate.get('redrob_signals', {})
+    
+    last_active = signals.get('last_active_date', '2000-01-01')
+    try:
+        dt = datetime.strptime(last_active, '%Y-%m-%d')
+        days_since = (datetime(2026, 6, 11) - dt).days
+        if days_since < 30: behav_score += 40
+        elif days_since < 90: behav_score += 20
+    except: pass
+    
+    if signals.get('notice_period_days', 90) < 30: behav_score += 40
+    elif signals.get('notice_period_days', 90) <= 60: behav_score += 20
+    
+    if signals.get('recruiter_response_rate', 0) > 0.7: behav_score += 20
+    elif signals.get('recruiter_response_rate', 0) > 0.4: behav_score += 10
+    
+    return feat_score, behav_score
 
 def get_llm_score(candidate, job_desc):
     if not HAS_LLM:
         return 0, "Detailed analysis unavailable.", "N/A", "N/A"
     
-    profile_summary = f"Title: {candidate['profile']['current_title']}\nExp: {candidate['profile']['years_of_experience']}y\nSummary: {candidate['profile']['summary']}"
+    profile_summary = f"""
+    Title: {candidate['profile']['current_title']}
+    Experience: {candidate['profile']['years_of_experience']} years
+    History: {'; '.join([job.get('title', '') + ' at ' + job.get('company', '') for job in candidate.get('career_history', [])[:3]])}
+    Summary: {candidate['profile']['summary'][:300]}
+    """
     
-    prompt = f"Expert recruiter scoring for Senior AI role.\nJD: {job_desc[:500]}...\nCANDIDATE: {profile_summary}\nReturn JSON: {{'llm_score': 0-100, 'fit_summary': '', 'top_strength': '', 'top_gap': ''}}"
+    prompt = f"""You are a senior technical recruiter for a founding AI/ML engineering role.
+JD (Scale requirement: high-traffic, millions of queries):
+{job_desc[:500]}
+
+CANDIDATE:
+{profile_summary}
+
+Rank candidates higher if they built systems at high-traffic scale (millions of queries/day).
+A candidate from Amazon Search, Flipkart Search, or similar scale should rank above smaller company equivalents.
+
+Return ONLY valid JSON:
+{{
+  "llm_score": <integer 0-100>,
+  "fit_summary": "<one sentence fit justification>",
+  "top_strength": "<single strongest signal>",
+  "top_gap": "<single biggest concern>"
+}}"""
 
     try:
         response = ollama.chat(model=LLM_MODEL_NAME, messages=[{'role': 'user', 'content': prompt}], format='json')
@@ -219,14 +255,21 @@ def main():
         for c in filtered_candidates[:80]:
             semantic_scores[c['candidate_id']] = 0.5
 
-    print("Stage 2: Feature Scoring...")
+    print("Stage 2: Scoring...")
     candidate_dict = {c['candidate_id']: c for c in filtered_candidates}
     shortlisted_data = []
     for cid, sem_score in semantic_scores.items():
+        if cid not in candidate_dict: continue
         cand = candidate_dict[cid]
-        feat_score = get_feature_score(cand, sem_score)
-        shortlisted_data.append({'candidate_id': cid, 'feat_score': feat_score, 'sem_score': sem_score})
+        feat_score, behav_score = get_scores(cand, sem_score)
+        shortlisted_data.append({
+            'candidate_id': cid, 
+            'feat_score': feat_score, 
+            'behav_score': behav_score,
+            'sem_score': sem_score
+        })
     
+    # Sort by feature score for LLM shortlist
     shortlisted_data.sort(key=lambda x: (-x['feat_score'], x['candidate_id']))
     top_20 = shortlisted_data[:20]
     
@@ -235,30 +278,50 @@ def main():
     for entry in tqdm(top_20):
         cand = candidate_dict[entry['candidate_id']]
         llm_score, fit_summary, strength, gap = get_llm_score(cand, job_description)
-        final_score = (0.35 * llm_score) + (0.65 * entry['feat_score'])
+        
+        # Balanced formula: 45% LLM + 30% Features + 25% Behavioral
+        final_score = (0.45 * llm_score) + (0.30 * entry['feat_score']) + (0.25 * entry['behav_score'])
+        
         final_results.append({
             'candidate_id': cand['candidate_id'],
-            'score': round(final_score / 100.0, 3),
-            'reasoning': f"{fit_summary} Strength: {strength}. Gap: {gap}."
+            'name': cand['profile'].get('anonymized_name', 'Unknown'),
+            'final_score': round(final_score / 100.0, 3),
+            'llm_score': llm_score,
+            'feat_score': entry['feat_score'],
+            'top_strength': strength,
+            'top_gap': gap,
+            'fit_summary': fit_summary
         })
 
+    # Fill rest to 100
     if len(final_results) < TOP_N:
         for entry in shortlisted_data[20:TOP_N]:
             cand = candidate_dict[entry['candidate_id']]
+            # For these, llm_score is 0
+            final_score = (0.30 * entry['feat_score']) + (0.25 * entry['behav_score'])
             final_results.append({
                 'candidate_id': cand['candidate_id'],
-                'score': round(entry['feat_score'] / 100.0, 3),
-                'reasoning': "Qualified candidate with strong semantic match and product background."
+                'name': cand['profile'].get('anonymized_name', 'Unknown'),
+                'final_score': round(final_score / 100.0, 3),
+                'llm_score': 0,
+                'feat_score': entry['feat_score'],
+                'top_strength': "Strong technical profile",
+                'top_gap': "Detailed LLM analysis pending",
+                'fit_summary': "Qualified candidate from semantic search."
             })
 
-    final_results.sort(key=lambda x: (-x['score'], x['candidate_id']))
+    final_results.sort(key=lambda x: (-x['final_score'], x['candidate_id']))
     
     print(f"Writing output to {args.out}...")
     with open(args.out, 'w', encoding='utf-8', newline='') as f:
         writer = csv.writer(f)
-        writer.writerow(['candidate_id', 'rank', 'score', 'reasoning'])
+        writer.writerow(['candidate_id', 'rank', 'name', 'final_score', 'llm_score', 'feature_score', 'top_strength', 'top_gap', 'fit_summary'])
         for i, res in enumerate(final_results[:TOP_N]):
-            writer.writerow([res['candidate_id'], i + 1, res['score'], res['reasoning']])
+            writer.writerow([
+                res['candidate_id'], i + 1, res['name'], res['final_score'], 
+                res['llm_score'], res['feat_score'], res['top_strength'], 
+                res['top_gap'], res['fit_summary']
+            ])
 
 if __name__ == "__main__":
     main()
